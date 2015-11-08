@@ -1,0 +1,29 @@
+{
+  "name": "promise-tutorial",
+  "version": "1.0.0",
+  "description": "This is only a demonstration which shows the basis of \"how promise works\", so don't use it in your production, or you will be called at midnight by your manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leftstick/promise-tutorial.git"
+  },
+  "keywords": [
+    "promise",
+    "concept",
+    "basis"
+  ],
+  "author": "Howard.Zuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leftstick/promise-tutorial/issues"
+  },
+  "homepage": "https://github.com/leftstick/promise-tutorial#readme",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "should": "^7.1.1",
+    "sinon": "^1.17.2"
+  }
+}
