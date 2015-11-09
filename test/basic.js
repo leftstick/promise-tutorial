@@ -75,17 +75,16 @@ describe('Promise', function() {
     });
 
     it('catch with error', function(done) {
-        var err = new Error('fuck');
         var onFirstCall = sinon.spy();
         var onErrorHandler = function() {
             return new PPP(function(resolve, reject) {
                 resolve('I_AM_BACK');
-            })
+            });
         };
         var onSecondCall = sinon.spy();
 
         new PPP(function(resolve, reject) {
-            reject(err);
+            reject(new Error('fuck'));
         })
             .then(onFirstCall, onErrorHandler)
             .then(onSecondCall);
